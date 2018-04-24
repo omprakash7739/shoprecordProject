@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Welcome To merchant Adminstration Page</title>
+ <script type="text/javascript">
+     function myFunction() {
+       /* alert("The site is under construction. some functionality may not work properly");*/
+        close();
+     }
+ </script>
+</head>
+</style>
+<style>
+body {font-family: Arial;}
+* {box-sizing: border-box}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 300px;
+    padding: 15px;
+    height: 30px;
+    margin: 5px 0 20px 0;
+    display: inline-table;
+    border: none;
+    background: #ffffff;
+    border-radius: 50px/40px;
+}
+input[type=file] {
+  width: 300px;
+    padding: 15px;
+    height: 35px;
+    margin: 5px 0 20px 0;
+    display: inline-table;
+    border: none;
+    background: #ffffff;
+    border-radius: 50px/40px;
+}
+a:link{
+    color: green;
+
+    margin-right: 400px;
+    text-decoration: none;
+    
+}
+a:visited {
+    color:#aaa1f0;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover {
+    color :#aaa1f0;
+    background-color: transparent;
+    text-decoration: none;
+}
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #f1f1f1;
+    outline: none;
+}
+input[type=file]:focus {
+  background-color: white;
+  outline:none;
+}
+hr {
+    border: 1px solid red;
+    margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 10px;
+    margin: 5px 5px;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    opacity: 0.8;
+}
+
+button:hover {
+    opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    padding: 5px 5px;
+    background-color: #f44336;
+    
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 100px;
+  height: 50px;
+  margin-left: 280px;
+  border:none;
+  backface-visibility: 1.0;
+  border-radius: 30px/20px;
+}
+
+/* Add padding to container elements */
+.container {
+    padding: 50px;
+    width: 800px;
+    height: 200px;
+    border: none;
+    border-radius: 8px;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+       width: 100%;
+    }
+}
+</style>
+<body >
+
+<div align="center" style="text-align: center"><form action="/register" style="border:1px">
+  <div class="container"  >
+    <p ><font color="red" >Enter mobile Details</font></p>
+    <hr>
+    <input type="text" placeholder="mobile name" name="mobileName" width="20" height="20" required>
+    <input type="text" placeholder="IMEI NO." name="IMEI_NO" width="20" height="20">
+    <input type="text" placeholder="model no." name="modelNo" width="20" height="20" required>
+    <input type="text" placeholder="customerContactNo" name="customerContactNo" width="20" height="20" required>
+    <input type="text" placeholder="customer mobile problem" name="customerMobileProblem" width="20" height="20" required>
+    <input type="file" placeholder="upload image of product" accept="image/*" name="productImage" width="20px" height="20px">
+    <div class="clearfix" align="center">
+     
+      <button type="submit" class="signupbtn" >Submit</button>
+    </div>
+  </div>
+</form>
+</div>
+</body>
+</html>
